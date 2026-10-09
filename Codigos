@@ -1,0 +1,405 @@
+#include <stdio.h>
+
+int main(){
+
+char inicial;
+float precio, iva, descuento, subtotal,total;
+int cantidadDejuegos;
+
+printf("Cual es el precio del videojuego \n");
+scanf("%f", &precio);
+
+printf("Cuantos videojuegos va a llevar \n");
+scanf("%d", &cantidadDejuegos);
+
+subtotal = (precio * cantidadDejuegos);
+descuento = subtotal * 0.35;
+iva = subtotal * 0.16;
+total = subtotal - descuento + iva;
+
+printf("Tu juego %.2f con la cantidad de juegos %d \n", precio, cantidadDejuegos);
+printf("Te queda un total de: %.2f", total);
+printf("pagaste de iva: %.2f dando un descuento de: %.2f", iva, descuento);
+
+return 0;
+
+}
+
+#include <stdio.h>
+
+int main(){
+    
+float calificacion1, calificacion2, calificacion3,calificacion4, calificacion5;
+float calificacion;
+float inicial;
+float promedio;
+
+
+
+printf("dar tu calificacion \n");
+scanf ("%f", &calificacion1);
+    
+printf("dar tu calificacion \n");
+scanf ("%f", &calificacion2);
+      
+printf("dar tu calificacion \n");
+scanf ("%f", &calificacion3);
+    
+printf("dar tu calificacion \n");
+scanf ("%f", &calificacion4);
+    
+printf("dar tu calificacion \n");
+scanf ("%f", &calificacion5);
+
+
+calificacion = (calificacion1 + calificacion2 + calificacion3 + calificacion4 + calificacion5) /5;
+
+if(promedio >= 7){
+    printf("pasaste \n");
+}
+
+
+
+
+
+
+    
+    return 0;
+
+}
+
+#include <stdio.h>
+
+int main(){
+    
+float gradosfarenheit,gradoscelcius, farenheit, celcius, temperatura ;
+
+
+
+
+printf("Dar tur gradosfarenheit \n");
+scanf ("%f", &temperatura);
+    
+
+
+temperatura = (gradosfarenheit - 32 *  5/9, gradoscelcius );
+
+if(temperatura >= 31){
+    printf("es mayor \n");
+}
+
+
+
+
+
+
+    
+    return 0;
+
+}
+
+#include <stdio.h>
+
+ int main()
+ {
+
+ char promedio1 ;
+
+
+ float promedio ;
+ float calf, calf1, calf2, calf3, calf4;
+ float calificacion;
+ 
+ printf("Dame tu calificacion \n");
+ scanf("%f", &calf1);
+ 
+ 
+ printf("Dame tu calificacion \n");
+ scanf("%f", &calf2);
+ 
+ 
+ printf("Dame tu calificacion \n");
+ scanf("%f", &calf3);
+ 
+ 
+ printf("Dame tu calificacion \n");
+ scanf("%f", &calf4);
+ 
+ promedio = (calf1 + calf2 + calf3 + calf4) /4;
+ 
+
+ if(promedio <= 6.9 ){
+    printf("reprobado \n");
+ }
+ 
+ 
+ else if(promedio >= 7 && promedio <= 8 ){
+    printf("pasaste \n");
+ }
+ 
+  else if(promedio >= 8.1 && promedio <= 9 ){
+    printf("imprecionante \n");
+ }
+ 
+  else if(promedio >= 9.1 && promedio <= 10){
+    printf("eres un sisu \n");
+ }
+ 
+   else if(promedio >= 10 && promedio <= 1000000000000){
+    printf("we pon linkin park de fonde xd \n");
+ }
+ 
+ 
+
+    return 0;
+ }
+
+#include <stdio.h>
+
+ int main()
+ {
+
+ float kelvin, celcius;
+ 
+ 
+ printf("Dame tu temperatura en kelvin \n");
+ scanf("%f", &kelvin);
+ 
+ 
+ celcius = (kelvin - 273.15);
+ 
+
+ if(celcius >= 10 {
+    printf("Tas en rusia o q \n");}
+ 
+ 
+ else if(celcius >= 12 && celcius <= 20 ){
+    printf("tas frio como un tieso \n");
+ }
+ 
+  else if(celcius >= 21 && celcius <= 30 ){
+    printf("que agradable \n");
+ }
+ 
+  else if(celcius >= 31 && celcius <= 40){
+    printf("estas ardido \n");
+
+    
+ }
+ 
+   else if(celcius >= 41 && celcius <= 50){
+    printf("we estas en juarez o q xd \n");
+ }
+ 
+ 
+    return 0;
+ }
+
+#include <stdio.h>
+
+int main()
+{
+    int cantidadMaterias
+  float parcial, calificaciones, promedio 
+    
+      printf("por favor escribir tu cantidad de materias");
+      scanf("%d", &cantidadMaterias; i++);
+      
+ for(int i = 0; i < cantidadMaterias; i++){
+     printf("ingrese la calificacion %d:" i + 1);
+     scanf("%f", &calificacion);
+     promedio += calificacion;
+     
+     promedio /= cantidadMaterias
+     printf("el promedo es: %.2f\n", promedo);
+     
+   if(promedio >= 7){
+       printf("felicidades, pasaste con un promedio de %.2f \n", promedio);
+       
+   }
+      
+
+ }
+ 
+ 
+ 
+
+
+
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int menu = 1;
+    
+   do{
+        printf("que quieres hacer del menu \n");
+        printf("1.- hola mundo \n");
+        printf("2.- adios mundo \n");
+        printf("3.- salir \n");
+        scanf("%d", &menu);
+          
+          switch(menu){
+          case 1:
+          printf("hola mundo \n");
+          break;
+          case 2:
+          printf("adios mundo \n");
+          break;
+          case 3:
+          printf("saliste del mundo \n");
+          break;
+          default:
+           printf("opcion no valida \n");
+        }
+    
+    }while(menu != 3);
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int menu = 1;
+    
+   do{
+        printf("que quieres hacer del menu \n");
+        printf("1.- N de cantidadMateria \n");
+        printf("2.- adios mundo \n");
+        printf("3.- salir \n");
+        scanf("%d", &menu);
+          
+          switch(menu){
+          case 1:
+          printf("hola mundo \n");
+          break;
+          case 2:
+          printf("adios mundo \n");
+          break;
+          case 3:
+          printf("saliste del mundo \n");
+          break;
+          default:
+           printf("opcion no valida \n");
+        }
+    
+    }while(menu != 3);
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+void promedio (){
+    
+}
+
+
+
+int suma(int a, int b){
+    return a + b;
+}
+
+int resta(int a, int b){
+    return a - b;
+}
+
+int multiplicacion(int a, int b){
+    return a * b;
+}
+
+int division(int a, int b){
+    return a / b;
+}
+
+
+int main(){
+    
+    int menu = 4;
+    
+    int mensaje;
+    int valor;
+  
+    
+    valor = suma(5, 6);
+    printf("el valor de la suma es; %d \n", valor);
+    mensaje();
+    
+    
+    valor = resta(5, 6);
+    printf("el valor de la resta es; %d \n", valor);
+   
+    
+    
+    valor = multiplicacion(5, 6);
+    printf("el valor de la multiplicacion es; %d \n", valor);
+
+    
+    
+    valor = division(5, 6);
+    printf("el valor de la division es; %d \n", valor);
+ 
+    
+    
+    
+    do{
+        printf("que quieres hacer del menu \n");
+        printf("1.- calcular promedio de n Calificaciones \n");
+        printf("2.- adios mundo \n");
+        printf("3.- salir \n");
+        scanf("%d", &menu);
+
+    switch(menu){
+    case 1:
+    promedio();
+    break;
+     case 2:
+    printf("adios mundo \n");
+    break;
+     case 3:
+    promedio("saliste del menu \n");
+    break;
+    default:
+    printf("opcion no valida \n");
+}
+
+    }while(menu != 3);
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
