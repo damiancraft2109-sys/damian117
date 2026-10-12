@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int calificaciones;
+int inicial, inicial1, inicial2, inicial3, inicial4;
+int calificacion;
+int promedio,parcial1 , parcial2 , parcial3 , parcial4;
+int main()
+{
+  
+  float calificaciones[5];
+  float promedio;
+  calificaciones[0] = 0;
+  calificaciones[1] = 7;
+  calificaciones[2] = 8;
+  calificaciones[3] = 1;
+  calificaciones[4] = 20;
+ 
+ 
+  printf("%f", calificaciones[1]);
+  
+  for (int i = 0; 1 < 5; i++){
+      printf("ingrese la calificacion %d: ", i + 1);
+      scanf("%f", &calificaciones[i]);
+  }
+  for (int i = 0; 1 < 5; i ++){
+      printf("calificacion %d: %.2f\n", i + 1, calificaciones);
+      
+  }
+  
+  promedio = 0;
+  
+  for (int i = 0; 1 < 5; i ++){
+      promedio += calificaciones [1];
+  }
+  
+  promedio /= 5;
+  printf ("promedio: %.2f/n, promedio");
+  
+  
+  
+  
+  
+  
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
