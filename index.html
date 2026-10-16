@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+</style>
+
+<div class="contenido">
+    <h1>Un bonito botón con <br>JavaScript <br>🤍   </h1>
+
+    <img src="img/gifjs.gif" alt="Perico JavaScript">
+
+    <button type="button" id="boton">Cliquéame</button>
+    <p id="mensaje"></p>
+
+</div>
+
+<script>
+    let botonInicio = document.getElementById('boton');
+    let mensaje = document.getElementById('mensaje');
+
+    botonInicio.addEventListener('click', function () {
+        mensaje.textContent = "¡Has hecho clic en el botón! El periquito ahora está más feliz :)";
+        mensaje.style.color = "#f5f5f5";
+        botonInicio.textContent = "Pulsado";
+    });
+</script>
+
+</body>
+</html>
